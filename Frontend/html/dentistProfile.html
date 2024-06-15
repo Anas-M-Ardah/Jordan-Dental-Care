@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\css\dentistProfile.css">
+    <script src="https://kit.fontawesome.com/e7512376c0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\images\favicon-32x32.png">
+    <title>Profile Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-tooth"></i> Jordan Dental Care</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" id="register" href="#">Register <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" id="myAppointments" href="#">My Appointments <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header> 
+
+    <h1 id="message" class="message"></h1>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Dentist Profile Card -->
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img id="image" src="" class="card-img" alt="Dentist Profile Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 id="name" class="card-title">Dr. John Doe</h5>
+                                <p id="experience" class="card-text"><strong>Experience:</strong></p>
+                                <p id="location" class="card-text"><strong>Location:</strong> New York, USA</p>
+                                <p id="email" class="card-text"><strong>Email:</strong> john.doe@example.com</p>
+                                <p id="phone" class="card-text"><strong>Phone:</strong> 123-456-7890</p>
+                                <p id="date_of_birth" class="card-text"><strong>Date of Birth:</strong> 01/01/2000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                  <!-- Appointment Form -->
+                  <div class="card mb-3">
+                      <form id="appointmentForm" class="card-body">
+                          <h2 class="card-title">Add OR Modify</h2>
+                          <h2 class="card-title">Appointment</h2>
+                          <div class="form-group">
+                              <label for="service-1">Select a Service:</label>
+                              <select id="service-1" name="service-1" class="form-control">
+                                  <!-- Options will be added dynamically using JavaScript -->
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="date">Date:</label>
+                              <input type="date" id="date" name="date" class="form-control" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="time">Time: (in 24-hour format)</label>
+                              <div class="time-inputs">
+                                  <input type="number" id="hour" name="hour" min="0" max="23" placeholder="Hour" class="form-control" required>
+                                  <span>:</span>
+                                  <input type="number" id="minute" name="minute" min="0" max="59" placeholder="Minute" class="form-control" required>
+                              </div>
+                          </div>
+                          <button id="add-appointment-btn" type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          
+              <div class="col-md-6">
+                  <!-- Add Service Form -->
+                  <div class="card mb-3">
+                      <form id="serviceForm" class="card-body">
+                          <h2 class="card-title">Add OR Modify</h2>
+                          <h2 class="card-title">Service</h2>
+                          <div class="form-group">
+                              <label for="service-2">Select a Service:</label>
+                              <select id="service-2" name="service-2" class="form-control">
+                                  <!-- Options will be added dynamically using JavaScript -->
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="price">Price:</label>
+                              <input type="number" id="price" name="price" min="0" max="5000" placeholder="Enter price" class="form-control" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="duration">Duration (in minutes):</label>
+                              <input type="number" id="duration" name="duration" min="15" max="180" step="5" placeholder="Enter duration" class="form-control" required>
+                          </div>
+                          <button id="add-service-btn" type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-primary btn-history btn-block">View Your History</button>
+                </div>
+                <div class="col-md-6">
+                    <button id="view-patient-history" class="btn btn-primary btn-history btn-block">View Patients' History</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="view-todays-appointments" class="btn btn-primary btn-history btn-block">View Today's Appointments</button>
+                </div>
+                <div class="col-md-6">
+                    <button id="add-mulitple-appointments" class="btn btn-primary btn-history btn-block">Add Multiple Appointments</button>
+                </div>
+            </div>
+        </div>
+        
+              
+        <!-- Loader and Backdrop -->
+        <div id="loader" class="loader"></div>
+        <div id="backdrop" class="backdrop"></div> 
+
+        <!-- Logout Button -->
+        <div class="logout text-center" style="margin-bottom: 2%;">
+            <button class="btn btn-danger" id="logoutButton">Logout</button>  
+        </div>        
+    </main> 
+
+    <!-- Ensure jQuery is loaded first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Then include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\js\dentistProfile.js"></script>  
+</body>
+</html>

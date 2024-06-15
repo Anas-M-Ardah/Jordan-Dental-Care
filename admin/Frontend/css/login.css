@@ -1,0 +1,34 @@
+/* Custom styles for the login form */
+
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.card {
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #333;
+}
+
+.form-group label {
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue primary button */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus style */
+}

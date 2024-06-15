@@ -1,0 +1,10 @@
+.payment-container{
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-container{
+        margin-top: 20%;
+    }
+    
+}

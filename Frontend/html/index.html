@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\css\index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e7512376c0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\images\favicon-32x32.png">
+    <title>Jordan Dental Care</title>
+</head>
+<body>
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-tooth"></i> Jordan Dental Care</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="register" href="register.html">Register <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="myAppointments" href="#">My Appointments <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    
+        <main role="main">
+
+          <div id="loader" class="loader"></div>
+          <div id="backdrop" class="backdrop"></div> 
+    
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="first-slide" src="https://i.ibb.co/0qnTkhS/carousel-1.jpg" alt="First slide">
+                <div class="container">
+                  <div class="carousel-caption text-left">
+                    <h1>KEEP YOUR TEETH HEALTHY</h1>
+                    <p>Take The Best Quality Dental Treatment</p>
+                    <p><a class="btn btn-lg btn-primary" href="register.html" role="button">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="second-slide" src="https://i.ibb.co/55hwBXJ/carousel-2.jpg" alt="Second slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>TRANSFORM YOUR SMILE</h1>
+                    <p>Discover the confidence of a beautiful smile with our range of cosmetic dentistry services. Let our experts help you achieve the smile of your dreams.</p>
+                    <p><a class="btn btn-lg btn-primary" href="services.html" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="third-slide" src="https://i.ibb.co/zm8B595/a-dental-clinic-upscaled.jpg" alt="Third slide">
+                <div class="container">
+                  <div class="carousel-caption text-right">
+                    <h1>EXPERIENCE PAIN-FREE DENTISTRY</h1>
+                    <p>Our gentle approach to dentistry ensures a comfortable experience for every patient. Say goodbye to dental anxiety and hello to stress-free dental care.</p>
+                    <p><a class="btn btn-lg btn-primary" href="services.html" role="button">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    
+    
+          <!-- Marketing messaging and featurettes
+          ================================================== -->
+          <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+          <div class="container marketing">
+    
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="https://i.ibb.co/K2JpjK8/service-2.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Regular Checkups</h2>
+                <p>Regular dental checkups are essential for maintaining good oral health. Our experienced dentists will ensure that your teeth and gums are in top condition, helping you prevent potential issues.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="https://i.ibb.co/wBNf66V/price-1.jpg" alt="Generic placeholder image" width="200" height="200">
+                <h2>Cosmetic Dentistry</h2>
+                <p>Enhance your smile with our cosmetic dentistry services. From teeth whitening to dental veneers, we offer personalized treatments to help you achieve the smile you've always wanted.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="https://i.ibb.co/R7M8J7S/price-3.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Dental Implants</h2>
+                <p>Restore your smile and regain functionality with dental implants. Our skilled implant dentists utilize advanced techniques to replace missing teeth, providing natural-looking and long-lasting results.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+    
+    
+            <!-- START THE FEATURETTES -->
+    
+            <hr class="featurette-divider">
+    
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Making Appointments Easier <span class="text-muted"> Simplify Your Dental Care.</span></h2>
+                <p class="lead">With our user-friendly website, scheduling your dental appointments has never been easier. Say goodbye to long phone calls and waiting on hold. Our online booking system allows you to conveniently select the date and time that works best for you, putting you in control of your dental care. Whether it's a routine checkup or a specialized procedure, our streamlined appointment process ensures a hassle-free experience.</p>
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://i.ibb.co/dWdCzmQ/a-patient-booking-an-appointment-online-upscaled.jpg" alt="Generic placeholder image">
+              </div>
+            </div>
+    
+            <hr class="featurette-divider">
+    
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Meet Our Experienced Team <span class="text-muted"> Experts in Dental Care.</span></h2>
+                <p class="lead">At Jordan Dental Care, our team of dedicated dentists brings years of experience and expertise to every appointment. From routine cleanings to complex procedures, our skilled professionals are committed to providing the highest quality dental care in a comfortable and welcoming environment. With a focus on patient satisfaction and personalized treatment plans, you can trust our team to deliver exceptional results and keep your smile healthy and beautiful.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="https://i.ibb.co/bgyPN2p/dental-team-upscaled-1.jpg" alt="Generic placeholder image">
+              </div>
+            </div>
+    
+            <hr class="featurette-divider">
+    
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted"> We're everywhere.</span></h2>
+                <p class="lead">We understand that accessibility is key when it comes to dental care. That's why we're proud to announce that our services are available nationwide. No matter where you are, our expert team of dentists is ready to provide you with top-notch dental care that you can trust.
+                    Whether you're in a bustling city or a quiet countryside, our commitment to excellence remains unwavering. From routine check-ups to advanced procedures, we're here to ensure that everyone has access to quality dental services, wherever they may be.
+                    Choose convenience. Choose quality. Choose Jordan Dental Care.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://i.ibb.co/bmsrBMK/happy-jordanian-patient-upscaled.jpg" alt="Generic placeholder image">
+              </div>
+            </div>
+    
+            <hr class="featurette-divider">
+    
+            <!-- /END THE FEATURETTES -->
+    
+          </div><!-- /.container -->
+    
+    
+          <!-- FOOTER -->
+          <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2023-2024 Jordan Dental Care, Inc.</p>
+            <p>Contact us: <a href="mailto:dcare055@gmail.com"><i class="fas fa-envelope"></i> dcare055@gmail.com</a></p>
+          </footer>          
+        </main>
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <!-- Ensure jQuery is loaded first -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Then include Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Your custom JavaScript -->
+        <script src="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\js\index.js"></script>
+</body>
+</html>

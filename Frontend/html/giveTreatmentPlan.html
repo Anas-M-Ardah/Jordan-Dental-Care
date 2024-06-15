@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\css\giveTreatmentPlan.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e7512376c0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\images\favicon-32x32.png">
+    <title>Jordan Dental Care</title>
+</head>
+<body>
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-tooth"></i> Jordan Dental Care</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="register" href="register.html">Register <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="myAppointments" href="#">My Appointments <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div style="margin-bottom: 7%;">
+            eper
+        </div>
+
+        <div id="loader" class="loader"></div>
+        <div id="backdrop" class="backdrop"></div> 
+
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="treatmentPlanForm"> <!-- Added id attribute -->
+                        
+                        <div class="form-group">
+                            <label for="medical_history">Medical History:</label>
+                            <textarea class="form-control" id="medical_history" name="medical_history" rows="4" required></textarea>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="dental_issues">Dental Issues:</label>
+                            <textarea class="form-control" id="dental_issues" name="dental_issues" rows="4" required></textarea>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="treatment_plan">Proposed Treatment Plan:</label>
+                            <textarea class="form-control" id="treatment_plan" name="treatment_plan" rows="4" required></textarea>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="estimated_cost">Estimated Cost:</label>
+                            <input type="number" class="form-control" id="estimated_cost" name="estimated_cost" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="comments">Additional Comments:</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
+                        </div>
+        
+                        <button style="margin-bottom: 2%;" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form id="imageUploadForm" enctype="multipart/form-data"> <!-- Added id attribute -->
+                        <div class="form-group">
+                            <label for="image">X-ray Image:</label>
+                            <input type="file" class="form-control-file" id="image" name="image">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <form id="imageUploadForm-1" enctype="multipart/form-data" style="margin-top: 2%;"> <!-- Added id attribute -->
+                        <div class="form-group">
+                            <label for="image1">X-ray Image-2:</label>
+                            <input type="file" class="form-control-file" id="image1" name="image">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <form id="imageUploadForm-2" enctype="multipart/form-data" style="margin-top: 2%;"> <!-- Added id attribute -->
+                        <div class="form-group">
+                            <label for="image">X-ray Image-3:</label>
+                            <input type="file" class="form-control-file" id="image2" name="image">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <form id="imageUploadForm-3" enctype="multipart/form-data" style="margin-top: 2%;"> <!-- Added id attribute -->
+                        <div class="form-group">
+                            <label for="image">X-ray Image-4:</label>
+                            <input type="file" class="form-control-file" id="image3" name="image">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <!-- Ensure jQuery is loaded first -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Then include Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Your custom JavaScript -->
+        <script src="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\js\giveTreatmentPlan.js"></script>
+</body>
+</html>

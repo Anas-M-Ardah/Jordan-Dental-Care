@@ -1,0 +1,131 @@
+.card {
+  margin: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Limit maximum width */
+  height: auto; /* Adjust height automatically */
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(8px); /* Blur effect */
+  z-index: 1; /* Set a lower z-index */
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  z-index: 2;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 2%;
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  margin: 0 2%;
+  width: calc(100% - 4%); /* Adjust width for padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 4%); /* Adjust width for padding */
+}
+
+.time-inputs input[type="number"] {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.time-inputs span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.btn-history {
+  display: block; /* Make the button a block element */
+  width: 75%; /* Set the width of the button */
+  margin: 0 auto 2%; /* Center horizontally by setting left and right margins to auto */
+}
+
+.message {
+  text-align: center;
+  margin-top: 5%;
+  padding: 20px;
+  background-color: #0056b3; /* Light red background color */
+  color: white;
+  border: 1px solid #f5c6cb; /* Red border */
+  border-radius: 5px; /* Rounded corners */
+  display: none; /* Hide by default */
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+      margin-top: 20%;
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .message {
+      margin-top: 20%;
+  }
+
+}
