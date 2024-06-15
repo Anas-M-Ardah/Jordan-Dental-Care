@@ -74,6 +74,7 @@ To start the application, run the following command:
 
 <img width="960" alt="services" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/16443673-542f-4de5-b9d7-e2fc72423d85">
 
+<img width="960" alt="appointments" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/3a0e1a91-7c96-4e36-9d29-b9f65ef50e19">
 
 ## ERD
 Please refer to the following Entity-Relationship Diagram (ERD) when designing your database:
