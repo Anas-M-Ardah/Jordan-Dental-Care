@@ -29,13 +29,13 @@ To set up the project on your local device, follow these steps:
 
 ### 1. **Clone the Repository**
 
-``bash
-git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
-cd Jordan-Dental-Care
+   ``bash
+   git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
+   cd Jordan-Dental-Care
    
 ### 2. **Install Dependencies**
    
-     Ensure you have Node.js and PostgreSQL installed on your machine.
+     **Ensure you have Node.js and PostgreSQL installed on your machine.**
      npm install
    
 ### 3. **Set Up the Database**
