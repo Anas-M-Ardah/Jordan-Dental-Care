@@ -34,17 +34,18 @@ To set up the project on your local device, follow these steps:
 
 ### 1. **Clone the Repository**
 
-``bash
+```bash
   git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
   cd Jordan-Dental-Care
+```
 
 ### 2. **Install Dependencies**
 
 Ensure you have Node.js and PostgreSQL installed on your machine.
 
-``bash
+```bash
   npm install
-
+```
 
 ### 3. **Set Up the Database**
 
@@ -52,19 +53,19 @@ Create a PostgreSQL database and update the `.env` file with your database crede
 
 Example `.env` file:
 
-``env
+```env
   DB_HOST=localhost
   DB_USER=your_username
   DB_PASSWORD=your_password
   DB_NAME=jordan_dental_care
-
+```
 ## 4. **Run the Application**
 
 To start the application, run the following command:
 
-``bash
+```bash
   npm start
-
+```
 
 ## Screenshots
 <img width="960" alt="homepage" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/ea294e1d-687c-4069-860a-c9f86f76fdc3">
@@ -89,4 +90,3 @@ Ensure your database schema aligns with this ERD for optimal functionality of Jo
 ## Contributing
 --We welcome contributions!
 
-````
