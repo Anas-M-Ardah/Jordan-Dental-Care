@@ -3,6 +3,7 @@
 **Jordan Dental Care** is a web application designed to streamline dental appointments and enhance the interaction between dentists and patients.
 
 ## Table of Contents
+
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Installation Instructions](#installation-instructions)
@@ -12,36 +13,40 @@
 - [Contributing](#contributing)
 
 ## Technologies Used
+
 The project is built using the following technologies:
+
 - **PostgreSQL**: A powerful, open-source object-relational database system.
 - **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - **Express.js**: A fast, unopinionated, minimalist web framework for Node.js.
 - **HTML, CSS, JavaScript**: For building the front-end interface of the application.
 
 ## Features
+
 - **Appointment Management**: Allows users to book, view, and cancel dental appointments.
 - **Patient-Dentist Interaction**: Facilitates communication between patients and dentists.
 - **User Authentication**: Secure login and registration for patients and staff.
 - **Database Integration**: Stores and manages data using PostgreSQL.
 
 ## Installation Instructions
+
 To set up the project on your local device, follow these steps:
 
-## 1. **Clone the Repository**
+### 1. **Clone the Repository**
 
-```bash
+````bash
 git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
 cd Jordan-Dental-Care
- 
-## 2. **Install Dependencies**
+
+### 2. **Install Dependencies**
 
 Ensure you have Node.js and PostgreSQL installed on your machine.
 
-```bash
+``bash
 npm install
 
-   
-## 3. **Set Up the Database**
+
+### 3. **Set Up the Database**
 
 Create a PostgreSQL database and update the `.env` file with your database credentials.
 
@@ -60,7 +65,7 @@ To start the application, run the following command:
 ```bash
 npm start
 
-   
+
 ## Screenshots
 <img width="960" alt="homepage" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/ea294e1d-687c-4069-860a-c9f86f76fdc3">
 
@@ -84,3 +89,4 @@ Ensure your database schema aligns with this ERD for optimal functionality of Jo
 ## Contributing
 --We welcome contributions!
 
+````
