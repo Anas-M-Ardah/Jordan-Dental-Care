@@ -28,18 +28,18 @@ The project is built using the following technologies:
 To set up the project on your local device, follow these steps:
 
 1. **Clone the Repository**
-     -git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
-     -cd Jordan-Dental-Care
+     git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
+     cd Jordan-Dental-Care
 2. **Install Dependencies**
-     -Ensure you have Node.js and PostgreSQL installed on your machine.
-     -npm install
+     Ensure you have Node.js and PostgreSQL installed on your machine.
+     npm install
 3. **Set Up the Database**
-    -Create a PostgreSQL database and update the .env file with your database credentials.
-    -Example .env file:
-    -DB_HOST=localhost
-    -DB_USER=your_username
-    -DB_PASSWORD=your_password
-    -DB_NAME=jordan_dental_care
+    Create a PostgreSQL database and update the .env file with your database credentials.
+    Example .env file:
+    DB_HOST=localhost
+    DB_USER=your_username
+    DB_PASSWORD=your_password
+    DB_NAME=jordan_dental_care
 4. **Set Up the Database**
    -Start the Application
    -npm start
@@ -55,7 +55,7 @@ To set up the project on your local device, follow these steps:
 ## ERD
 Please refer to the following Entity-Relationship Diagram (ERD) when designing your database:
 
-![Final ERD](https://github.com/Anas-M-Ardah/Jordan-Dental-Care/blob/main/assets/127131278/5ee852ce-169a-4f67-a633-226047113316.png)
+![final-erd](https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/d32196d5-d87a-4735-8de1-766276720e6c)
 
 Ensure your database schema aligns with this ERD for optimal functionality of Jordan Dental Care.
 
@@ -66,3 +66,4 @@ Ensure your database schema aligns with this ERD for optimal functionality of Jo
 
 ## Contributing
 --We welcome contributions!
+
