@@ -1,0 +1,21 @@
+.signup-form {
+    margin-top: 7%;
+}
+
+.message {
+    text-align: center;
+    margin-top: 5%;
+    padding: 20px;
+    background-color: darkred; /* Light red background color */
+    color: white;
+    border: 1px solid #f5c6cb; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Hide by default */
+  }
+  
+@media screen and (max-width: 768px) {
+    .signup-form {
+        margin-top: 15%;
+    }
+    
+}

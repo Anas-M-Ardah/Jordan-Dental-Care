@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="language" content="en">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Description of your website">
+  <meta name="keywords" content="keywords, separated, by, commas">
+
+  <!-- Specify language for search engines -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="D:\Bachelor Software HU\Projects\Project-2 V.2\Frontend\images\favicon-32x32.png">
+  
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="D:\Bachelor Software HU\Projects\Project-2 V.2\admin\Frontend\css\patient.css" rel="stylesheet">
+
+  <title>Welcome Admin</title>
+</head>
+
+<body>
+
+  <div id="loader" class="loader"></div>
+  <div id="backdrop" class="backdrop"></div> 
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+    <a class="navbar-brand" href="#">Jordan Dental Care</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dentist.html">Dentist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="patients.html">Patients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="signoutLink">Sign out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">
+                <span data-feather="home"></span>
+                Dashboard <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dentist.html">
+                <span data-feather="briefcase"></span>
+                Dentist
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="patients.html">
+                <span data-feather="users"></span>
+                Patients
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <!-- Content Goes Here -->
+
+        <!-- First Section: Retrieving Patients -->
+        <section id="retrievePatients" class="mt-4">
+            <h2>Retrieve Patients</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Search Bar -->
+                    <div class="input-group mb-3">
+                        <input id="patientName" type="text" class="form-control" placeholder="Search Patients" aria-label="Search Patients" aria-describedby="searchButton">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+                        </div>
+                    </div>
+                    <!-- End of Search Bar -->
+
+                    <div id="patientResult" class="mt-4">
+                        <!-- Rendered results will go here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Second Section: Banning Patients -->
+        <section id="banPatients" class="mt-4" style="padding-bottom: 7%;">
+          <h2>Ban Patients</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <!-- Banning Patients Form -->
+                  <form id="banForm">
+                      <div class="form-group">
+                          <label for="patientName2">Patient Name:</label>
+                          <input type="text" class="form-control" id="patientName2" placeholder="Enter Patient Name">
+                      </div>
+                      <div class="form-group">
+                          <label for="banReason">Ban Reason:</label>
+                          <select class="form-control" id="banReason">
+                              <!-- Options for Ban Reason -->
+                              <option value="Non-payment">Non-payment</option>
+                              <option value="Violence">Violence</option>
+                              <option value="Repeated misconduct">Repeated misconduct</option>
+                              <!-- End of Options -->
+                          </select>
+                      </div>
+                      <!-- Add Search Button -->
+                      <button type="button" id="searchButton2" class="btn btn-primary">Search</button>
+                  </form>
+              </div>
+          </div>
+          <!-- Result Container -->
+          <div id="banResult" class="mt-4">
+              <!-- Rendered results will go here -->
+          </div>
+      </section>
+      
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- Custom JS -->
+  <script src="../js/patient.js"></script>
+</body>
+</html>

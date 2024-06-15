@@ -1,0 +1,73 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    font-family: 'Roboto', sans-serif; /* Change font family for content */
+  }
+
+  /* Import fonts from Google Fonts */
+
+/* Style for form container */
+.login-form {
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Style for form title */
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for form inputs and labels */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for submit button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 100%;
+    }
+}
+
