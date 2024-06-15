@@ -7,6 +7,7 @@
 - [Features](#features)
 - [Installation Instructions](#installation-instructions)
 - [Screenshots](#screenshots)
+- [Entity Relationship Diagram](#ERD)
 - [Links](#links)
 - [Contributing](#contributing)
 
@@ -47,6 +48,9 @@ To set up the project on your local device, follow these steps:
 <img width="960" alt="homepage" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/ea294e1d-687c-4069-860a-c9f86f76fdc3">
 <img width="955" alt="dentist" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/5eaf8462-eb0a-4fa4-9390-d64c425941c4">
 <img width="960" alt="services" src="https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/16443673-542f-4de5-b9d7-e2fc72423d85">
+
+## ERD
+![final-erd](https://github.com/Anas-M-Ardah/Jordan-Dental-Care/assets/127131278/5ee852ce-169a-4f67-a633-226047113316)
 
 ## Links
 - **Videos Showcasing the Project's Features**: Watch videos demonstrating the features of Jordan Dental Care. Please note that some videos may be outdated.
