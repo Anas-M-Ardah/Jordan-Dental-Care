@@ -54,10 +54,11 @@ Create a PostgreSQL database and update the `.env` file with your database crede
 Example `.env` file:
 
 ```env
-  DB_HOST=localhost
-  DB_USER=your_username
-  DB_PASSWORD=your_password
-  DB_NAME=jordan_dental_care
+  DATABASE_HOST=localhost
+  DATABASE_USER=your_username
+  DATABASE_PASSWORD=your_password
+  DATABASE_NAME=jordan_dental_care
+  DATABASE_PORT=your_database_port
 ```
 ## 4. **Run the Application**
 
