@@ -36,7 +36,7 @@ To set up the project on your local device, follow these steps:
 
 ```bash
   git clone https://github.com/Anas-M-Ardah/Jordan-Dental-Care.git
-  cd Jordan-Dental-Care
+  cd Jordan-Dental-Care/Backend
 ```
 
 ### 2. **Install Dependencies**
